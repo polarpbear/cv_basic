@@ -44,6 +44,8 @@ img=cv.merge((b,g,r))
 # 色彩空间改变 记得赋值
 # cv.cvtColor(input_image,flag)
 #flag-> cv.COLOR_BGR2GRAY 灰度    cv.COLOR_BGR2HSV
+img_hsv=cv.cvtColor(img,cv.COLOR_BGR2HSV)
 
+                
 plt.imshow(img[:,:,::-1])
 plt.show()
